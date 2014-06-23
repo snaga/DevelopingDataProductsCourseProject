@@ -9,4 +9,5 @@ library(slidify)
 slidify("index.Rmd")
 browseURL("index.html")
 
-publish_github("snaga", "DevelopingDataProductsCourseProject")
+publish_github("DevelopingDataProductsCourseProject", "snaga")
+

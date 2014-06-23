@@ -11,23 +11,19 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
-1. Edit YAML front matter
-2. Write using R Markdown
+## Motivation
+1. Selecting variables for a linear regression model is not easy and has many combination.
+2. To study the process, more interactive way is needed.
 3. Use an empty line followed by three dashes to separate slides!
 
 --- .class #id 
-## Slide 2
+## How It Works
 
 --- .class #id 
 
-## Slide 3
+## How To Use
 
 --- .class #id 
 
-## Slide 4
-
---- .class #id 
-
-## Slide 5
+## Future Works
 
