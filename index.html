@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Selecting variables for the Linear Regression Model</title>
+  <title>Choosing variables for the Linear Regression Model</title>
   <meta charset="utf-8">
-  <meta name="description" content="Selecting variables for the Linear Regression Model">
+  <meta name="description" content="Choosing variables for the Linear Regression Model">
   <meta name="author" content="Satoshi Nagayasu">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,7 +31,7 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Selecting variables for the Linear Regression Model</h1>
+    <h1>Choosing variables for the Linear Regression Model</h1>
     <h2>An Interactive Way to Select Variables</h2>
     <p>Satoshi Nagayasu<br/></p>
   </hgroup>
@@ -46,9 +46,9 @@
   </hgroup>
   <article data-timings="">
     <ol>
-<li>Selecting variables for a linear regression model is not easy and has many combination.</li>
+<li>Choosing variables for a linear regression model is not easy and has many combination.</li>
 <li>To study the process, more interactive way is needed.</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
+<li></li>
 </ol>
 
   </article>
@@ -60,7 +60,24 @@
     <h2>How It Works</h2>
   </hgroup>
   <article data-timings="">
-    
+    <ol>
+<li>This app uses the &quot;mtcars&quot; data set in R.</li>
+<li>&quot;mpg&quot; is the outcome variable.</li>
+<li>Other 10 variables are possible predicters for the model.</li>
+</ol>
+
+<pre><code class="r">data(mtcars)
+names(mtcars)
+</code></pre>
+
+<pre><code>##  [1] &quot;mpg&quot;  &quot;cyl&quot;  &quot;disp&quot; &quot;hp&quot;   &quot;drat&quot; &quot;wt&quot;   &quot;qsec&quot; &quot;vs&quot;   &quot;am&quot;   &quot;gear&quot;
+## [11] &quot;carb&quot;
+</code></pre>
+
+<ol>
+<li>You can observe a summary of the model and the residuals as you change.</li>
+</ol>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -70,7 +87,13 @@
     <h2>How To Use</h2>
   </hgroup>
   <article data-timings="">
-    
+    <ol>
+<li>There are 10 checkbox items to choose variables on the left panel.</li>
+<li>When you change your choice, a summary of the regression model and a plot of the residuals would be shown on the right panel.</li>
+<li>You can remove a variable which meets two conditions: the highest and &gt;0.05 p-value.</li>
+<li>You can continue Step.3 until reaching all variables have &lt;0.05 p-values.</li>
+</ol>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -80,7 +103,10 @@
     <h2>Future Works</h2>
   </hgroup>
   <article data-timings="">
-    
+    <ol>
+<li>Modify the app to allow multiple data sets.</li>
+</ol>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
