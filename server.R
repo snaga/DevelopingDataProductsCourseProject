@@ -75,8 +75,7 @@ shinyServer(function(input, output) {
         data(mtcars)
         
         fit <- run_lm(mtcars, input$column_name)
-        fit
-        #        print(summary(fit))
+        (summary(fit))
     })
 
     output$residual <- renderPlot({
